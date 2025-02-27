@@ -5,7 +5,7 @@
         school="RIT"
         degree="B.S. Software Engineering"
         period="August 2019 - May 2024"
-        imageSrc="https://media.licdn.com/dms/image/v2/C4E0BAQGnICZxLlhERw/company-logo_200_200/company-logo_200_200/0/1630565170020/rochester_institute_of_technology_logo?e=1748476800&v=beta&t=RA-RM0UuEH3EIXJG56aGKD_FkSF_YsUnzAbpkK0Qmos"
+        imageSrc="RIT.png"
     />
   </section>
 </template>
@@ -16,4 +16,17 @@ import EducationCard from "~/components/EducationCard.vue";
 </script>
 
 <style lang="scss" scoped>
+#education {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80rem;
+}
 </style>

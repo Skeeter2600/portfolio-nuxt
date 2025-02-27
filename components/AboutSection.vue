@@ -3,7 +3,7 @@
   <section id="about">
     <div class="about_container">
       <div class="section__pic-container">
-        <img class="profile_pic" src="~/assets/images/profile_pic.jpg" alt="Beck Anderson Headshot" />
+        <img class="profile_pic" src="/images/profile_pic.jpg" alt="Beck Anderson Headshot" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello World! I'm</p>
@@ -29,4 +29,73 @@
 </script>
 
 <style lang="scss" scoped>
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+.about_container {
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+}
+
+
+.section__pic-container {
+    display: flex;
+    height: 50vmin;
+    width: 50vmin;
+    margin: auto 0;
+    border: 5px solid #dfdfe5;
+    border-radius: 35px;
+    background-color: transparent;
+}
+
+.profile_pic {
+    display: flex;
+    height: 50vmin;
+    width: 50vmin;
+    margin: auto 0;
+    background-color: #dfdfe5;
+    border-radius: 35px;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    background-color: transparent;
+    width: 60vmin;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.resume-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    background-color: #dfdfe5;
+    border-radius: 2rem;
+    height: 6vmin;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
 </style>

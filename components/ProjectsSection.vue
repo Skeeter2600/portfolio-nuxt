@@ -3,37 +3,37 @@
     <h1 class="title">Projects</h1>
     <div class="project-container">
       <ProjectCard
-          title="Simulation of Protein Synthesis"
-          tag="Senior Project"
-          :description="proteinDescription"
-          imageSrc="electrophoresis.jpg"
-          linkUrl="https://amrmualla.github.io/SEProjectWebsite/"
-          linkText="Project Website"
+        title="Simulation of Protein Synthesis"
+        tag="Senior Project"
+        :description="proteinDescription"
+        imageSrc="electrophoresis.jpg"
+        linkUrl="https://amrmualla.github.io/SEProjectWebsite/"
+        linkText="Project Website"
       />
 
       <ProjectCard
-          title="World Construct"
-          tag="Personal Project"
-          :description="worldConstructDescription"
-          imageSrc="/images/world_construct.jpg"
-          linkUrl="https://github.com/Skeeter2600/World-Construct"
-          linkText="Repository"
+        title="World Construct"
+        tag="Personal Project"
+        :description="worldConstructDescription"
+        imageSrc="world_construct.jpg"
+        linkUrl="https://github.com/Skeeter2600/World-Construct"
+        linkText="Repository"
       />
 
       <ProjectCard
-          title="Recipe Cards"
-          tag="Professional"
-          :description="recipeCardsDescription"
-          imageSrc="/images/RecipeCards.png"
-          linkUrl="https://www.figma.com/file/kpA8eZT3m52YhCRhdB1pXj/Recipe-Cards?type=design&node-id=0%3A1&mode=design&t=ZwAvFUGCapBK9Ynr-1"
-          linkText="Figma Board"
+        title="Recipe Cards"
+        tag="Professional"
+        :description="recipeCardsDescription"
+        imageSrc="RecipeCards.png"
+        linkUrl="https://www.figma.com/file/kpA8eZT3m52YhCRhdB1pXj/Recipe-Cards?type=design&node-id=0%3A1&mode=design&t=ZwAvFUGCapBK9Ynr-1"
+        linkText="Figma Board"
       />
 
       <ProjectCard
-          title="Reddit Sentiment Analysis"
-          tag="Education"
-          :description="redditDescription"
-          imageSrc="/images/reddit.png"
+        title="Reddit Sentiment Analysis"
+        tag="Education"
+        :description="redditDescription"
+        imageSrc="reddit.png"
       />
     </div>
   </section>
@@ -50,4 +50,19 @@
 </script>
 
 <style lang="scss" scoped>
+
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
 </style>

@@ -7,7 +7,7 @@
         position="Associate Software Engineer"
         period="July 2024 - Present"
         :description="evoDescription"
-        imageSrc="https://media.licdn.com/dms/image/v2/D560BAQHDFQPPmg0Qtw/company-logo_200_200/company-logo_200_200/0/1734412044566/evo_security_logo?e=1748476800&v=beta&t=-B1_WEJP6uwfxb27cfygbqCSH8DuGDJJlDEObAePJ_8"
+        imageSrc="evo_security_logo.jpeg"
         websiteUrl="https://www.evosecurity.com/"
     />
 
@@ -16,7 +16,7 @@
         position="Course Assistant"
         period="August 2023 - May 2024"
         :description="ritDescription"
-        imageSrc="https://media.licdn.com/dms/image/v2/C4E0BAQGnICZxLlhERw/company-logo_200_200/company-logo_200_200/0/1630565170020/rochester_institute_of_technology_logo?e=1748476800&v=beta&t=RA-RM0UuEH3EIXJG56aGKD_FkSF_YsUnzAbpkK0Qmos"
+        imageSrc="RIT.png"
         websiteUrl="https://www.rit.edu/computing/"
     />
 
@@ -25,7 +25,7 @@
         position="Software Engineer Intern"
         period="January 2023 - May 2023"
         :description="ecolabDescription"
-        imageSrc="https://media.licdn.com/dms/image/v2/C560BAQH3EsOD1h7Tgg/company-logo_200_200/company-logo_200_200/0/1675088982273/ecolab_logo?e=1748476800&v=beta&t=QayTYCoBNhtqEwcZbpdjoKLzDKIhhll26IuvTCp0fwk"
+        imageSrc="Ecolab.jpg"
         websiteUrl="https://www.ecolab.com/"
     />
 
@@ -34,7 +34,7 @@
         position="Software Developer Co-op"
         period="May 2022 - December 2022"
         :description="alpineDescription"
-        imageSrc="https://media.licdn.com/dms/image/v2/D4E0BAQFd4aKIYp8t0g/company-logo_200_200/company-logo_200_200/0/1731606847583/alpinesoftware_logo?e=1748476800&v=beta&t=shiBrS1joMTzqIEntJoQuWk0huRDn8asgLOMNYgu9vQ"
+        imageSrc="alpinesoftware.jpg"
         websiteUrl="https://alpinesoftware.com/"
     />
   </section>
@@ -50,4 +50,17 @@
 </script>
 
 <style lang="scss" scoped>
+#experience {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 </style>
