@@ -41,24 +41,13 @@
     justify-content: center;
 }
 
-
-.section__pic-container {
-    display: flex;
-    height: 50vmin;
-    width: 50vmin;
-    margin: auto 0;
-    border: 5px solid #dfdfe5;
-    border-radius: 35px;
-    background-color: transparent;
-}
-
 .profile_pic {
     display: flex;
     height: 50vmin;
     width: 50vmin;
     margin: auto 0;
-    background-color: #dfdfe5;
-    border: 5px solid #dfdfe5;
+    background-color: var(--clr-primary-a10);
+    border: 5px solid var(--clr-primary-a0);
     border-radius: 35px;
 }
 
@@ -88,13 +77,8 @@
     justify-content: center;
     gap: 1rem;
     margin: 1rem;
-    background-color: #dfdfe5;
+    background-color: var(--clr-surface-a10);
     border-radius: 2rem;
     height: 6vmin;
-}
-
-.title {
-    font-size: 3rem;
-    text-align: center;
 }
 </style>

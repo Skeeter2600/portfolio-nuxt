@@ -36,13 +36,14 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--page-background);
+    background-color: var(--clr-surface-a0);
 }
 
 body {
     font-family: "Poppins", sans-serif;
     justify-content: center;
     align-items: center;
+    background-color: var(--clr-surface-a0);
 }
 
 html {
@@ -50,7 +51,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--clr-surface-tonal-a40);
     font-size: 2vmin;
 }
 
@@ -113,6 +114,7 @@ a:hover {
 .logo {
     font-size: 5vmin;
     background-color: transparent;
+    color: var(--clr-surface-a50);
 }
 
 .logo:hover {
@@ -145,6 +147,13 @@ a:hover {
 
 li {
     background-color: var(--clr-surface-a10);
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--clr-surface-a50);
+    text-align: center;
+    
 }
 
 .menu-links.open {
@@ -196,7 +205,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: var(--clr-surface-a50) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -207,7 +216,7 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
     background: rgb(53, 53, 53);
-    color: white;
+    color: var(--clr-surface-a50);;
 }
 
 .btn-color-1:hover {
@@ -224,4 +233,11 @@ section {
 
 .btn-container {
     gap: 1rem;
+}
+
+.content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-surface-a20);;
 }

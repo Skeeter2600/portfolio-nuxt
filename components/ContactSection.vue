@@ -4,7 +4,7 @@
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img
-          src="/images/email.png"
+          src="/images/email.svg"
           alt="Email icon"
           class="icon contact-icon email-icon"
         />
@@ -12,7 +12,7 @@
       </div>
       <div class="contact-info-container">
         <img
-          src="/images/github.png"
+          src="/images/github.svg"
           alt="Github Icon"
           class="icon contact-icon"
         />
@@ -21,7 +21,7 @@
 
       <div class="contact-info-container">
         <img
-          src="/images/linkedin.png"
+          src="/images/linkedin.svg"
           alt="LinkedIn Icon"
           class="icon contact-icon"
         />
@@ -49,10 +49,10 @@
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 2rem;
-    border-color: rgb(163, 163, 163);
+    border-color: var(--clr-surface-a10);
     margin: 2rem 0 2rem 0;
     padding: 0.5rem;
-    background-color: #dfdfe5;
+    background-color: var(--clr-surface-a10);
 }
 
 .contact-info-container {
@@ -61,17 +61,18 @@
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
-    background-color: #dfdfe5;
+    background-color: var(--clr-surface-a10);
 }
 
 .contact-info-container p {
-    background-color: #dfdfe5;
+    background-color: var(--clr-surface-a10);
     font-size: 2vmin;
 }
 
 .contact-icon {
     cursor: default;
-    background-color: #dfdfe5;
+    color: var(--clr-surface-a40);
+    background-color: var(--clr-surface-a10);
 }
 
 .email-icon {
