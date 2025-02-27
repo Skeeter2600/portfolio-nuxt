@@ -2,9 +2,7 @@
 <template>
   <section id="about">
     <div class="about_container">
-      <div class="section__pic-container">
         <img class="profile_pic" src="/images/profile_pic.jpg" alt="Beck Anderson Headshot" />
-      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello World! I'm</p>
         <h1 class="title">Beck Anderson</h1>
@@ -60,6 +58,7 @@
     width: 50vmin;
     margin: auto 0;
     background-color: #dfdfe5;
+    border: 5px solid #dfdfe5;
     border-radius: 35px;
 }
 
