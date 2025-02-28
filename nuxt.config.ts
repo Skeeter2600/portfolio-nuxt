@@ -16,7 +16,7 @@ export default {
     ]
   },
   css: [
-    '@/assets/css/main.css'
+    '~/assets/css/main.css'
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
@@ -29,11 +29,14 @@ export default {
     '@nuxt/content'
   ],
   content: {},
-  build: {},
+  build: {
+    publicPath: process.env.GITHUB_ACTIONS ? '/portfolio-nuxt/_nuxt/' : '/_nuxt/'
+  },
   generate: {
     fallback: true
   },
-  app: {
-    baseURL: process.env.GITHUB_ACTIONS ? '/portfolio-nuxt/' : '/' 
+  router: {
+    base: process.env.GITHUB_ACTIONS ? '/portfolio-nuxt/' : '/'
   },
+
 }
