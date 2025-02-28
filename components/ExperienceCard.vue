@@ -48,7 +48,7 @@
 <style lang="scss" scoped>
 
 .experience-card-body{
-    background-color: var(--clr-surface-a20);
+    background-color: var(--clr-surface-a10);
     border: 1px solid var(--clr-primary-a10);
     margin: 25px 0;
     overflow: hidden;
@@ -70,7 +70,7 @@
     justify-content: center;
     padding: 3rem;
     border-radius: 60px;
-    background-color: var(--clr-surface-a20);
+    background-color: var(--clr-surface-a10);
 }
 
 .experience-card-text {
@@ -82,8 +82,8 @@
     padding-right: 3rem;
     padding-top: 3rem;
     width: 70vmin;
-    color: white;
-    background-color: var(--clr-surface-a20);
+    color: var(--clr-light-a0);;
+    background-color: var(--clr-surface-a10);
 }
 
 .experience-card-position-container {
@@ -91,20 +91,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: var(--clr-surface-a20);
+    background-color: var(--clr-surface-a10);
 }
 
 .experience-position-info {
     padding-bottom: .5rem;
     font-size: 2.25vmin;
-    background-color: var(--clr-surface-a20);
+    background-color: var(--clr-surface-a10);
 }
 
 .experience-card-description {
     display: flex;
     flex-direction: column;
     white-space: pre-line;
-    background-color: var(--clr-surface-a20);
+    background-color: var(--clr-surface-a10);
 }
 
 .experience-card_link_boarder {

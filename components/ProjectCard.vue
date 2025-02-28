@@ -4,8 +4,8 @@
       <img :src="`/images/${imageSrc}`" :alt="title + ' Image'" class="project-card-image" />
     </div>
     <div class="project-card-text">
-      <p class="tag">{{ tag }}</p>
-      <h2>{{ title }}</h2>
+      <p class="project-card-tag">{{ tag }}</p>
+      <h2 class="project-card-title">{{ title }}</h2>
       <p class="project-card-description">{{ description }}</p>
       <div v-if="linkUrl" class="project-card_link_boarder">
         <a class="project-card-link-text" :href="linkUrl" target="_blank" rel="noreferrer">{{ linkText }}</a>
@@ -31,8 +31,8 @@
 <style lang="scss" scoped>
 
 .project-card-body{
-    background-color: #FFFFFF;
-    border: 5px solid #dfdfe5; /* Add subtle border */
+    background-color: var(--clr-surface-a10);
+    border: 5px solid var(--clr-primary-a10);; /* Add subtle border */
     margin: 25px 0;
     overflow: hidden;
     width: auto;
@@ -42,7 +42,7 @@
 }
 
 .project-card-image {
-    border-bottom: 4px solid #dfdfe5;
+    border-bottom: 4px solid var(--clr-primary-a10);;
     width: 100%;
     min-width: 300px;
     overflow: hidden;
@@ -50,6 +50,22 @@
     object-fit: cover;
     display: flex;
     justify-content: center;
+    background-color: var(--clr-surface-a10);
+}
+
+.project-card-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-surface-a10);
+}
+
+.project-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-surface-a10);
+    color: var(--clr-light-a0);
 }
 
 .project-card-text {
@@ -58,6 +74,7 @@
     flex-direction: column;
     align-content: center;
     height: 100%;
+    background-color: var(--clr-surface-a10);
 }
 
 .project-card-description {
@@ -66,6 +83,7 @@
     flex-direction: column;
     font-size: medium;
     margin: .5rem;
+    background-color: var(--clr-surface-a10);
 }
 
 .project-card_link_boarder {
@@ -78,6 +96,7 @@
     border-radius: 2rem;
     height: 6vmin;
     width: 60%;
+    
 }
 
 .project-card-link-text {
@@ -87,5 +106,6 @@
     text-decoration-color: white;
     font-size: 2.5vmin;
     padding: 0.5rem;
+    
 }
 </style>

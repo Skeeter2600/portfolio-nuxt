@@ -6,7 +6,7 @@
 
 :root {
     --clr-dark-a0: #000000;
-    --clr-light-a0: #ffffff;
+    --clr-light-a0: #FAF9F6;
 
     /** Dark theme primary colors */
     --clr-primary-a0: #9e0a0a;
@@ -239,5 +239,5 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--clr-surface-a20);;
+    background-color: var(--clr-surface-a10);;
 }

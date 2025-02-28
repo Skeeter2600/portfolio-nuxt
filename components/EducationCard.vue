@@ -34,8 +34,8 @@
 <style lang="scss" scoped>
 
 .education-card-body {
-  background-color: transparent;
-  border: 5px solid #dfdfe5; /* Add subtle border */
+  background-color: var(--clr-surface-a10);;
+  border: 5px solid var(--clr-primary-a10);
   margin: 25px 0;
   width: 75%;
   overflow: hidden;
@@ -55,6 +55,7 @@
   justify-content: center;
   padding: 3rem;
   border-radius: 60px;
+  background-color: var(--clr-surface-a10);
 }
 
 .education-card-text {
@@ -64,6 +65,7 @@
   font-size: medium;
   margin: .5rem;
   padding-bottom: 3rem;
+  background-color: var(--clr-surface-a10);
 }
 
 .education-position-info {
@@ -71,5 +73,7 @@
   align-items: center;
   flex-direction: column;
   font-size: x-large;
+  background-color: var(--clr-surface-a10);
+  color: var(--clr-light-a0);
 }
 </style>
