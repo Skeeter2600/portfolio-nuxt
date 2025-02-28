@@ -16,11 +16,13 @@ export default {
     ]
   },
   css: [
-    '~/assets/css/main.css'
+    '@/assets/css/main.css'
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  plugins: [],
+  plugins: [
+    '~/plugins/global-css.js'
+  ],
   components: true,
   buildModules: [],
   modules: [
@@ -32,6 +34,6 @@ export default {
     fallback: true
   },
   app: {
-    baseURL: '/'
-  }
+    baseURL: process.env.GITHUB_ACTIONS ? '/portfolio-nuxt/' : '/' 
+  },
 }
