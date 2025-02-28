@@ -61,6 +61,8 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
   @import '@/assets/scss/main.scss';
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+  @import url("https://unpkg.com/boxicons@2.1.4/dist/boxicons.js");
 
   #about {
     display: flex;
