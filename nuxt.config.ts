@@ -12,7 +12,11 @@ export default {
       { name: 'google-site-verification', content: 'Bd8B5XOSW9b0oPrIETRfytp7jrYGM7oP00g-OVG8HhI' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/images/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '~/public/favicon.ico' },
+      { 
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'
+      }
     ]
   },
   compatibilityDate: '2024-11-01',
