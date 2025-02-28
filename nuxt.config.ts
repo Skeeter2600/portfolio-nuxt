@@ -21,7 +21,6 @@ export default {
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   plugins: [
-    '~/plugins/global-css.js'
   ],
   components: true,
   buildModules: [],
