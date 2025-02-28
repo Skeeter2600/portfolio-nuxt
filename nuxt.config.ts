@@ -30,5 +30,8 @@ export default {
   build: {},
   generate: {
     fallback: true
+  },
+  app: {
+    baseURL: '/'
   }
 }
