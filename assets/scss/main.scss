@@ -1,5 +1,6 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://unpkg.com/boxicons@2.1.4/dist/boxicons.js");
 
 // Color Variables
 $clr-dark-a0: #000000;
@@ -33,18 +34,18 @@ $clr-surface-tonal-a50: #948d8b;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: $clr-surface-a0;
 }
 
-html, 
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  width: 100%;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
   background-color: $clr-surface-a0;
-  font-family: 'Poppins', sans-serif !important; // Add !important to ensure it overrides
-  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 p {
@@ -60,10 +61,6 @@ a,
 
 a {
   background-color: transparent;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, span, li {
-  font-family: 'Poppins', sans-serif;
 }
 
 // Desktop Navigation
@@ -83,9 +80,6 @@ nav {
   width: 100%;
   background-color: $clr-surface-a10;
   border-radius: 0 0 25px 25px;
-  margin: 0;
-  padding: 0;
-  position: relative; // Add this
 }
 
 .nav-links {
@@ -168,17 +162,15 @@ li {
 
 // Sections
 section {
-  padding: 4vh 0; // Remove horizontal padding
-  margin: 0;
-  width: 100%;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
   min-height: fit-content;
-  position: relative; // Add this
 }
 
 .section-container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  display: flex;
 }
 
 // Icons

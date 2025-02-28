@@ -72,7 +72,7 @@ onUnmounted(() => {
     overflow: hidden;
     width: auto;
     min-width: 350px;
-    max-width: 45%;
+    max-width: 40%;
     border-radius: 35px;
     opacity: 0;
     transform: translateY(20px);
@@ -87,7 +87,7 @@ onUnmounted(() => {
   .project-card-image {
     border-bottom: 4px solid $clr-primary-a10;
     width: 100%;
-    min-width: 35rem;
+    min-width: 40rem;
     overflow: hidden;
     aspect-ratio: 16/9;
     object-fit: cover;
