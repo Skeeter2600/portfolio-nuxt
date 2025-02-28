@@ -60,63 +60,65 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-#about {
-  display: flex;
-  justify-content: center;
-}
+  @import '@/assets/scss/main.scss';
 
-.about_container {
-  gap: 5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: transparent;
-  justify-content: center;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
+  #about {
+    display: flex;
+    justify-content: center;
+  }
 
-.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .about_container {
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
 
-.profile_pic {
-  display: flex;
-  height: 50vmin;
-  width: 50vmin;
-  margin: auto 0;
-  background-color: var(--clr-primary-a10);
-  border: 5px solid var(--clr-primary-a0);
-  border-radius: 35px;
-}
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-.section__text {
-  align-self: center;
-  text-align: center;
-  align-content: center;
-  background-color: transparent;
-  width: 60vmin;
-}
+  .profile_pic {
+    display: flex;
+    height: 50vmin;
+    width: 50vmin;
+    margin: auto 0;
+    background-color: $clr-primary-a10;
+    border: 5px solid $clr-primary-a0;
+    border-radius: 35px;
+  }
 
-.section__text p {
-  font-weight: 600;
-}
+  .section__text {
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    background-color: transparent;
+    width: 60vmin;
+  }
 
-.section__text__p1 {
-  text-align: center;
-}
+  .section__text p {
+    font-weight: 600;
+  }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
+  .section__text__p1 {
+    text-align: center;
+  }
 
-.resume-button {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-  background-color: transparent;
-}
+  .section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .resume-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    background-color: transparent;
+  }
 </style>

@@ -50,19 +50,20 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '@/assets/scss/main.scss';
 
-#projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+  #projects {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
 
-.project-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
+  .project-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+  }
 </style>

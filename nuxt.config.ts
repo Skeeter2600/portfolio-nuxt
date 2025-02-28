@@ -15,15 +15,20 @@ export default {
       { rel: 'icon', type: 'image/png', href: '/images/favicon.ico' }
     ]
   },
-  css: [
-    '~/assets/css/main.css'
-  ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  plugins: [
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
+  styleResources: {
+    scss: [
+      '~/assets/scss/variables.scss',
+    ]
+  },
+  css: [
+    '~/assets/scss/main.scss'
   ],
   components: true,
-  buildModules: [],
   modules: [
     '@nuxt/content'
   ],

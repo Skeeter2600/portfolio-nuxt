@@ -16,17 +16,19 @@ import EducationCard from "~/components/EducationCard.vue";
 </script>
 
 <style lang="scss" scoped>
-#education {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+  @import '@/assets/scss/main.scss';
 
-.education-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 80rem;
-}
+  #education {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 80rem;
+  }
 </style>

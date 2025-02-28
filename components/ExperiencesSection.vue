@@ -50,17 +50,19 @@
 </script>
 
 <style lang="scss" scoped>
-#experience {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+  @import '@/assets/scss/main.scss';
 
-.experience-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+  #experience {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .experience-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
 </style>

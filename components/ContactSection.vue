@@ -35,47 +35,48 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '@/assets/scss/main.scss';
 
-#contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+  #contact {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
 
-.contact-info-upper-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 2rem;
-    border-color: var(--clr-surface-a10);
-    margin: 2rem 0 2rem 0;
-    padding: 0.5rem;
-    background-color: var(--clr-surface-a10);
-}
+  .contact-info-upper-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 2rem;
+      border-color: $clr-surface-a10;
+      margin: 2rem 0 2rem 0;
+      padding: 0.5rem;
+      background-color: $clr-surface-a10;
+  }
 
-.contact-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
-    background-color: var(--clr-surface-a10);
-}
+  .contact-info-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1rem;
+      background-color: $clr-surface-a10;
+  }
 
-.contact-info-container p {
-    background-color: var(--clr-surface-a10);
-    font-size: 2vmin;
-}
+  .contact-info-container p {
+      background-color: $clr-surface-a10;
+      font-size: 2vmin;
+  }
 
-.contact-icon {
-    cursor: default;
-    color: var(--clr-surface-a40);
-    background-color: var(--clr-surface-a10);
-}
+  .contact-icon {
+      cursor: default;
+      color: $clr-surface-a40;
+      background-color: $clr-surface-a10;
+  }
 
-.email-icon {
-    height: 2.5rem;
-}
+  .email-icon {
+      height: 2.5rem;
+  }
 </style>

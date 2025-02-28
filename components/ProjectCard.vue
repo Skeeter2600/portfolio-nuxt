@@ -64,77 +64,78 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.project-card-body {
-  background-color: var(--clr-surface-a10);
-  border: 5px solid var(--clr-primary-a10);
-  margin: 25px 0;
-  overflow: hidden;
-  width: auto;
-  min-width: 350px;
-  max-width: 45%;
-  border-radius: 35px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
+  @import '@/assets/scss/main.scss';
+  .project-card-body {
+    background-color: $clr-surface-a10;
+    border: 5px solid $clr-primary-a10;
+    margin: 25px 0;
+    overflow: hidden;
+    width: auto;
+    min-width: 350px;
+    max-width: 45%;
+    border-radius: 35px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
 
-.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-.project-card-image {
-  border-bottom: 4px solid var(--clr-primary-a10);
-  width: 100%;
-  min-width: 35rem;
-  overflow: hidden;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  background-color: var(--clr-surface-a10);
-}
+  .project-card-image {
+    border-bottom: 4px solid $clr-primary-a10;
+    width: 100%;
+    min-width: 35rem;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    background-color: $clr-surface-a10;
+  }
 
-.project-card-tag {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--clr-surface-a10);
-}
+  .project-card-tag {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $clr-surface-a10;
+  }
 
-.project-card-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--clr-surface-a10);
-  color: var(--clr-light-a0);
-}
+  .project-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $clr-surface-a10;
+    color: $clr-light-a0;
+  }
 
-.project-card-text {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-content: center;
-  height: 100%;
-  background-color: var(--clr-surface-a10);
-}
+  .project-card-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    background-color: $clr-surface-a10;
+  }
 
-.project-card-description {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: medium;
-  margin: .5rem;
-  margin-bottom: 2rem;
-  background-color: var(--clr-surface-a10);
-}
+  .project-card-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: medium;
+    margin: .5rem;
+    margin-bottom: 2rem;
+    background-color: $clr-surface-a10;
+  }
 
-.project-link-container {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin: 1.5rem 0;
-  background-color: transparent;
-}
+  .project-link-container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    background-color: transparent;
+  }
 </style>
