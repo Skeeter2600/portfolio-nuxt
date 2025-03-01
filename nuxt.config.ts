@@ -1,3 +1,5 @@
+import { slideVisibleOnceBottom } from "@vueuse/motion";
+
 export default {
   target: 'static',
   head: {
@@ -43,7 +45,8 @@ export default {
   ],
   components: true,
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@vueuse/motion/nuxt'
   ],
   content: {},
   build: {
@@ -55,5 +58,27 @@ export default {
   router: {
     base: process.env.GITHUB_ACTIONS ? '/portfolio-nuxt/' : '/'
   },
-
+  plugins: [
+    '~/plugins/vue-motion'
+  ],
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'slide-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+            },
+            duration: 400,
+            slideVisibleOnceBottom
+          }
+        }
+      }
+    }
+  }
 }

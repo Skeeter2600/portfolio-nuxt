@@ -1,8 +1,12 @@
 <template>
   <div 
     class="project-card-body" 
-    :class="{ 'fade-in': isVisible }" 
-    ref="cardRef"
+    v-motion-slide-visible-once-bottom
+    :initial="{ opacity: 0, y: 100 }"
+    :enter="{ opacity: 1, y: 0 }"
+    :delay="200"
+    style="opacity: 1"
+    :duration="500"
   >
     <div class="content-img">
       <a v-if="linkUrl" :href="linkUrl" target="_blank" rel="noreferrer">
@@ -19,7 +23,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
 
 defineProps({
   title: String,
@@ -32,39 +35,11 @@ defineProps({
     default: ''
   }
 });
-
-const cardRef = ref<HTMLElement | null>(null);
-const isVisible = ref(false);
-let observer: IntersectionObserver | null = null;
-
-onMounted(() => {
-  observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      isVisible.value = true;
-      // Optional: Unobserve after animation is triggered
-      if (observer && cardRef.value) {
-        observer.unobserve(cardRef.value);
-      }
-    }
-  }, {
-    threshold: 0.1 // Trigger when at least 10% of the card is visible
-  });
-
-  if (cardRef.value) {
-    observer.observe(cardRef.value);
-  }
-});
-
-onUnmounted(() => {
-  if (observer && cardRef.value) {
-    observer.unobserve(cardRef.value);
-    observer = null;
-  }
-});
 </script>
 
 <style lang="scss" scoped>
   @import '@/assets/scss/main.scss';
+
   .project-card-body {
     background-color: $clr-surface-a10;
     border: 5px solid $clr-primary-a10;
@@ -74,14 +49,6 @@ onUnmounted(() => {
     min-width: 350px;
     max-width: 40%;
     border-radius: 35px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-
-  .fade-in {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   .project-card-image {

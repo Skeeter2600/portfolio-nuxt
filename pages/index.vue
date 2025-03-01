@@ -1,15 +1,15 @@
-// pages/index.vue would automatically become the '/' route
 <template>
   <NuxtLayout name="page">
-    <div>
-    <AboutSection />
-    <ExperiencesSection />
-    <EducationSection />
-    <ProjectsSection />
-    <ContactSection />
-  </div>
+    <ClientOnly>
+      <div>
+        <AboutSection />
+        <ExperiencesSection />
+        <EducationSection />
+        <ProjectsSection />
+        <ContactSection />
+      </div>
+    </ClientOnly>
   </NuxtLayout>
-
 </template>
 
 <script lang="ts">
