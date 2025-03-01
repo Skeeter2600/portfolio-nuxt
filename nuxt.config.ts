@@ -12,7 +12,7 @@ export default {
       { name: 'google-site-verification', content: 'Bd8B5XOSW9b0oPrIETRfytp7jrYGM7oP00g-OVG8HhI' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '~/public/favicon.ico' },
+      { rel: 'icon', type: 'image/ico', href: 'https://drive.google.com/file/d/1tNvKL8N7V9ZWX7UyeyqjEWRXrz8pjRBR/preview' },
       {
           rel: 'preconnect',
           href: 'https://fonts.googleapis.com'
