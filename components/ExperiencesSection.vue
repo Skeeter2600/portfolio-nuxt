@@ -11,7 +11,7 @@
         position="Associate Software Engineer"
         period="July 2024 - Present"
         :description="evoDescription"
-        imageSrc="evo_security_logo.jpeg"
+        imageSrc="https://media.licdn.com/dms/image/v2/D560BAQHDFQPPmg0Qtw/company-logo_200_200/company-logo_200_200/0/1734412044566/evo_security_logo?e=1749081600&v=beta&t=DunoDoahveXe26d8lXYFArfdvbRcRPaq0iKJiJ5hu5c"
         websiteUrl="https://www.evosecurity.com/"
     />
 
@@ -20,7 +20,7 @@
         position="Course Assistant"
         period="August 2023 - May 2024"
         :description="ritDescription"
-        imageSrc="RIT.png"
+        imageSrc="https://media.licdn.com/dms/image/v2/C4E0BAQGnICZxLlhERw/company-logo_200_200/company-logo_200_200/0/1630565170020/rochester_institute_of_technology_logo?e=1749081600&v=beta&t=Sdh5LFkNBCczSd9zXHuAvW9ozMWIivKAva-uu9fI9ts"
         websiteUrl="https://www.rit.edu/computing/"
     />
 
@@ -29,7 +29,7 @@
         position="Software Engineer Intern"
         period="January 2023 - May 2023"
         :description="ecolabDescription"
-        imageSrc="Ecolab.jpg"
+        imageSrc="https://media.licdn.com/dms/image/v2/C560BAQH3EsOD1h7Tgg/company-logo_200_200/company-logo_200_200/0/1675088982273/ecolab_logo?e=1749081600&v=beta&t=anLEey9o23r4o5a8ysRnCtJYGgfLyQi1LSWrlh1qI7M"
         websiteUrl="https://www.ecolab.com/"
     />
 
@@ -38,7 +38,7 @@
         position="Software Developer Co-op"
         period="May 2022 - December 2022"
         :description="alpineDescription"
-        imageSrc="alpinesoftware.jpg"
+        imageSrc="https://media.licdn.com/dms/image/v2/D4E0BAQFd4aKIYp8t0g/company-logo_200_200/company-logo_200_200/0/1731606847583/alpinesoftware_logo?e=1749081600&v=beta&t=jcUUmexWNwW1gOsWC-j7XL-HrZoIMJaNmqfCZcoVyIU"
         websiteUrl="https://alpinesoftware.com/"
     />
   </section>

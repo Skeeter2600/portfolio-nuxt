@@ -4,9 +4,9 @@
   >
     <div class="content-img">
       <a v-if="linkUrl" :href="linkUrl" target="_blank" rel="noreferrer">
-        <img :src="`/images/${imageSrc}`" :alt="title + ' Image'" class="project-card-image" />
+        <img :src="imageSrc" :alt="title + ' Image'" class="project-card-image" />
       </a>
-      <img v-else :src="`/images/${imageSrc}`" :alt="title + ' Image'" class="project-card-image" />
+      <img v-else :src="imageSrc" :alt="title + ' Image'" class="project-card-image" />
     </div>
     <div class="project-card-text">
       <p class="project-card-tag">{{ tag }}</p>

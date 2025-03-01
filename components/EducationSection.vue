@@ -3,13 +3,13 @@
     <h1 
       class="title" 
     >
-      Experience
+      Education
     </h1>
     <EducationCard
         school="RIT"
         degree="B.S. Software Engineering"
         period="August 2019 - May 2024"
-        imageSrc="RIT.png"
+        imageSrc="https://media.licdn.com/dms/image/v2/C4E0BAQGnICZxLlhERw/company-logo_200_200/company-logo_200_200/0/1630565170020/rochester_institute_of_technology_logo?e=1749081600&v=beta&t=Sdh5LFkNBCczSd9zXHuAvW9ozMWIivKAva-uu9fI9ts"
     />
   </section>
 </template>

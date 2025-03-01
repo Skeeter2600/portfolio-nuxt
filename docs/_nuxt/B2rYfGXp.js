@@ -1,0 +1,1 @@
+import{_ as a,a2 as o,c,o as s,b as e,a as _,N as r}from"./Dnd2E6lS.js";const p={name:"DefaultLayout",components:{Header:o}};function u(l,m,d,f,i,x){const t=o,n=r("Nuxt");return s(),c("div",null,[e(t),_("main",null,[e(n)])])}const $=a(p,[["render",u]]);export{$ as default};

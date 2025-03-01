@@ -17,24 +17,6 @@
 import { onMounted } from 'vue';
 
 onMounted(() => {
-  // Fix for scroll positioning to account for sticky header
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      
-      if (targetElement) {
-        const navHeight = document.getElementById('desktop-nav').offsetHeight;
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        
-        window.scrollTo({
-          top: targetPosition - navHeight - 20, // Additional 20px buffer
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
   
   // Setup intersection observer for fade-in animation
   const observer = new IntersectionObserver((entries) => {

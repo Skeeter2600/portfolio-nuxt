@@ -10,7 +10,7 @@
         title="Simulation of Protein Synthesis"
         tag="Senior Project"
         :description="proteinDescription"
-        imageSrc="electrophoresis.jpg"
+        imageSrc="https://www.gelepchina.com/uploads/electrophoriesis.jpg"
         linkUrl="https://amrmualla.github.io/SEProjectWebsite/"
         linkText="Project Website"
       />
@@ -19,7 +19,7 @@
         title="World Construct"
         tag="Personal Project"
         :description="worldConstructDescription"
-        imageSrc="world_construct.jpg"
+        imageSrc="https://i0.wp.com/blog.worldanvil.com/wp-content/uploads/2020/02/Kingsreach-Blue.jpg?resize=1024%2C768"
         linkUrl="https://github.com/Skeeter2600/World-Construct"
         linkText="Repository"
       />
@@ -28,7 +28,7 @@
         title="Recipe Cards"
         tag="Professional"
         :description="recipeCardsDescription"
-        imageSrc="RecipeCards.png"
+        imageSrc="https://wptavern.com/wp-content/uploads/2018/11/Screen-Shot-2018-11-19-at-8.43.27-PM.png"
         linkUrl="https://www.figma.com/file/kpA8eZT3m52YhCRhdB1pXj/Recipe-Cards?type=design&node-id=0%3A1&mode=design&t=ZwAvFUGCapBK9Ynr-1"
         linkText="Figma Board"
       />
@@ -37,7 +37,7 @@
         title="Reddit Sentiment Analysis"
         tag="Education"
         :description="redditDescription"
-        imageSrc="reddit.png"
+        imageSrc="https://www.logo.wine/a/logo/Reddit/Reddit-Vertical-Complete-White-Dark-Background-Logo.wine.svg"
       />
     </div>
   </section>

@@ -4,9 +4,9 @@
   >
     <div class="content-img">
       <a v-if="websiteUrl" :href="websiteUrl" target="_blank" rel="noreferrer">
-        <img :src="`/images/${imageSrc}`" :alt="company + ' Logo'" class="experience-card-image" />
+        <img :src="imageSrc" :alt="company + ' Logo'" class="experience-card-image" />
       </a>
-      <img v-else :src="`/images/${imageSrc}`" :alt="company + ' Logo'" class="experience-card-image" />
+      <img v-else :src="imageSrc" :alt="company + ' Logo'" class="experience-card-image" />
     </div>
     <div class="experience-card-text">
       <div class="experience-card-position-container">

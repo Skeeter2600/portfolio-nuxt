@@ -3,7 +3,7 @@
     <div 
       class="about_container" 
     >
-      <img class="profile_pic" src="/images/profile_pic.jpg" alt="Beck Anderson Headshot" />
+      <img class="profile_pic" src="https://media.licdn.com/dms/image/v2/D5603AQHbUnF5SoFKcw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705027469601?e=1746057600&v=beta&t=sCKlOA0b-nIFUu9ldxTwVbhN8lAMyThijjMETH2uPl0" alt="Beck Anderson Headshot" />
       <div class="section__text">
         <p class="section__text__p1">Hello World! I'm</p>
         <h1 class="title">Beck Anderson</h1>

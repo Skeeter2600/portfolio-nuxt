@@ -1,15 +1,14 @@
 <template>
   <NuxtLayout name="page">
-    <ClientOnly>
-      <div>
-        <AboutSection />
-        <ExperiencesSection />
-        <EducationSection />
-        <ProjectsSection />
-        <ContactSection />
-      </div>
-    </ClientOnly>
+    <div>
+    <AboutSection />
+    <ExperiencesSection />
+    <EducationSection />
+    <ProjectsSection />
+    <ContactSection />
+  </div>
   </NuxtLayout>
+
 </template>
 
 <script lang="ts">

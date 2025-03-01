@@ -3,7 +3,7 @@
     class="education-card-body" 
   >
     <div class="content-img">
-      <img :src="`/images/${imageSrc}`" :alt="school + ' Logo'" class="education-card-image" />
+      <img :src="imageSrc" :alt="school + ' Logo'" class="education-card-image" />
     </div>
     <div class="education-card-text">
       <h2 class="education-position-info">{{ degree }}</h2>

@@ -8,36 +8,37 @@
     <div 
       class="contact-info-upper-container"
     >
-      <div class="contact-info-container">
+      <div class="contact-info-container ">
         <img
-          src="/images/email.svg"
+          src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png"
           alt="Email icon"
-          class="icon contact-icon email-icon"
+          class="icon contact-icon"
         />
-        <p><a href="mailto:andersbe2600@gmail.com">andersbe2600@gmail.com</a></p>
+        <p class="nav-links"><a href="mailto:andersbe2600@gmail.com">andersbe2600@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
         <img
-          src="/images/github.svg"
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
           alt="Github Icon"
           class="icon contact-icon"
         />
-        <a href="https://github.com/Skeeter2600" target="_blank" rel="noreferrer">Github</a>
+        <p class="nav-links"><a href="https://github.com/Skeeter2600" target="_blank" rel="noreferrer">Github</a></p>
       </div>
 
       <div class="contact-info-container">
         <img
-          src="/images/linkedin.svg"
+          src="https://img.icons8.com/ios11/512/linkedin.png"
           alt="LinkedIn Icon"
           class="icon contact-icon"
         />
-        <p><a href="https://www.linkedin.com/in/beck-anderson-se/" target="_blank" rel="noreferrer">Linkedin</a></p>
+        <p class="nav-links"><a href="https://www.linkedin.com/in/beck-anderson-se/" target="_blank" rel="noreferrer">Linkedin</a></p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+
 </script>
 
 <style lang="scss" scoped>
@@ -80,9 +81,51 @@
       cursor: default;
       color: $clr-surface-a40;
       background-color: $clr-surface-a10;
+      height: 2.5rem;
   }
 
-  .email-icon {
-      height: 2.5rem;
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    
+    li {
+      background-color: transparent;
+    }
+    
+    a {
+      color: $clr-surface-a50;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
+      background-color: transparent;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $clr-primary-a30;
+        transition: width 0.3s ease;
+      }
+      
+      &:hover {
+        color: $clr-light-a0;
+        text-decoration: none;
+        
+        &::after {
+          width: 100%;
+        }
+      }
+    }
   }
 </style>
