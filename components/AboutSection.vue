@@ -1,12 +1,6 @@
 <template>
   <section id="about">
     <div 
-      v-motion-slide-visible-once-bottom
-      :initial="{ opacity: 0, y: 100 }"
-      :enter="{ opacity: 1, y: 0 }"
-      :delay="200"
-      style="opacity: 1"
-      :duration="500"
       class="about_container" 
     >
       <img class="profile_pic" src="/images/profile_pic.jpg" alt="Beck Anderson Headshot" />

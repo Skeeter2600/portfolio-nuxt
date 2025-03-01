@@ -2,18 +2,10 @@
   <section id="contact">
     <h1 
       class="title" 
-      v-motion-slide-visible-once-bottom
-      :initial="{ opacity: 0, y: 100 }"
-      :enter="{ opacity: 1, y: 0 }"
-      :delay="200"
-      style="opacity: 1"
-      :duration="500"
     >
       Contact Me
     </h1>
     <div 
-      v-motion-slide-visible-once-bottom
-      :duration="500"
       class="contact-info-upper-container"
     >
       <div class="contact-info-container">
@@ -50,7 +42,7 @@
 
 <style lang="scss" scoped>
   @import '@/assets/scss/main.scss';
-
+  
   #contact {
       display: flex;
       justify-content: center;

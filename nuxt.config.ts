@@ -61,24 +61,19 @@ export default {
   plugins: [
     '~/plugins/vue-motion'
   ],
-  runtimeConfig: {
-    public: {
-      motion: {
-        directives: {
-          'slide-bottom': {
-            initial: {
-              scale: 0,
-              opacity: 0,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-            },
-            duration: 400,
-            slideVisibleOnceBottom
-          }
-        }
+  motion: {
+    directives: {
+      'slide-visible-once-bottom': {
+        initial: {
+          opacity: 0,
+          y: 100
+        },
+        visible: {
+          opacity: 1,
+          y: 0
+        },
+        delay: 500
       }
     }
-  }
+  },
 }

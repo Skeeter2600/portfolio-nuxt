@@ -2,12 +2,6 @@
   <section id="projects">
     <h1 
       class="title" 
-      v-motion-slide-visible-once-bottom
-      :initial="{ opacity: 0, y: 100 }"
-      :enter="{ opacity: 1, y: 0 }"
-      :delay="200"
-      style="opacity: 1"
-      :duration="500"
     >
       Projects
     </h1>
